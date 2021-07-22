@@ -10,26 +10,19 @@ import XCTest
 
 class TemperatureUnitTests: XCTestCase {
     
-    var tempUnit: Settings.TemperatureUnit!
+    var tempUnit: TemperatureUnit!
     
     override func setUp() {
-        
         tempUnit = .fahrenheit
     }
     
     func testConverToFahrenheit() throws {
-        guard let formula = tempUnit.conversionFormula(to: .fahrenheit) else {
-            XCTAssertEqual(1, 1)
-            return
-        }
+        let formula = tempUnit.conversionFormula(to: .fahrenheit)
         XCTAssertEqual(formula(3), 37.4)
     }
     
     func testConverToCelcius() throws {
-        guard let formula = tempUnit.conversionFormula(to: .celsius) else {
-            XCTAssertEqual(1, 1)
-            return
-        }
+        let formula = tempUnit.conversionFormula(to: .celsius)
         XCTAssertEqual(formula(95), 35)
     }
 }
