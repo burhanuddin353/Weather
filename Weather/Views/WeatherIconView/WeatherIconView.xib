@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherIconView" customModule="OpenWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="zc0-xl-Pa7"/>
+                <outlet property="descriptionLabel" destination="5vS-fp-Pme" id="aBQ-5f-wZd"/>
+                <outlet property="iconView" destination="Dcn-kY-rDd" id="6aT-5Q-tRg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0LE-Ob-slO">
+                    <rect key="frame" x="0.0" y="0.0" width="154" height="112"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dcn-kY-rDd">
+                            <rect key="frame" x="0.0" y="31" width="50" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vS-fp-Pme">
+                            <rect key="frame" x="50" y="46.5" width="104" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="0LE-Ob-slO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1ue-6m-Vms"/>
+                <constraint firstAttribute="trailing" secondItem="0LE-Ob-slO" secondAttribute="trailing" id="EaV-iY-eoz"/>
+                <constraint firstAttribute="bottom" secondItem="0LE-Ob-slO" secondAttribute="bottom" id="dZ6-5t-rqY"/>
+                <constraint firstItem="0LE-Ob-slO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yzi-WF-pIM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-92.753623188405811" y="287.94642857142856"/>
+        </view>
+    </objects>
+</document>

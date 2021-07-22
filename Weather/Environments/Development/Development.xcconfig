@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  Weather
+//
+//  Created by Burhanuddin Sunelwala on 22/07/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_NAME = Weather D
+XCC_CONFIG_PATH = Development/Config.plist
+XCC_LAUNCH_SCREEN = LaunchDev
