@@ -14,7 +14,7 @@ class EnvironmentViewModelTests: XCTestCase {
     
     override func setUp() {}
     
-    func testConverToFahrenheit() throws {
+    func testEnvironmentValues() throws {
         XCTAssertEqual(viewModel.environment.value, "Development")
     }
 }
